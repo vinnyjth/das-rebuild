@@ -1,5 +1,10 @@
-Onekey
-======
-Just one key keyboard for example. It sends 'a' key if pins PB0 and PB1 are short-circuited.
+Custom DAS Rebuild.
 
-https://github.com/tmk/tmk_keyboard/issues/56
+Your matrix wiring will be different.
+
+Build/Run
+
+```
+make clean && make all
+teensy_loader_cli -w -mmcu=at90usb1286 onekey_lufa.hex -v
+```
